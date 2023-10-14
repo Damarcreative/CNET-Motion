@@ -42,9 +42,18 @@ output_video_path = "output_video.mp4"
 
 # Load ControlNet and Stable Diffusion Pipeline
 controlnet = ControlNetModel.from_pretrained(ControlNetModeluse, torch_dtype=torch.float16)
-pipe = StableDiffusionControlNetImg2ImgPipeline.from_single_file(
-    ControlNetimgtoimgModeluse, controlnet=controlnet, torch_dtype=torch.float16
-)
+
+# Mengecek apakah repo_id mengandung ekstensi yang sesuai
+if repo_id.endswith((".safetensors", ".ckpt", ".pt")):
+    pipe = StableDiffusionControlNetImg2ImgPipeline.from_single_file(ControlNetimgtoimgModeluse,
+                                                    torch_dtype=torch.float16,
+                                                    use_karras_sigmas=True,
+                                                   )
+else:
+    pipe = StableDiffusionControlNetImg2ImgPipeline.from_pretrained(ControlNetimgtoimgModeluse,
+                                                   torch_dtype=torch.float16,
+                                                   use_karras_sigmas=True
+                                                  )
 
 pipe.safety_checker = None
 pipe.requires_safety_checker = False
