@@ -32,6 +32,27 @@ The goal of this project is to demonstrate the application of ControlNet from th
 - ControlNet model: The ControlNet model used in this project is loaded from `lllyasviel/sd-controlnet-canny`. You can explore other pre-trained models or fine-tune the model based on your requirements.
 - Stable Diffusion model: The Stable Diffusion model used is loaded from `runwayml/stable-diffusion-v1-5`. Adjust the model parameters and settings in process_video.py as needed.
 
+## How does this work?
+![Flow](src/Flow.jpg)
+
+### Model Initialization:
+- The ControlNet model and Stable Diffusion model are initialized using pre-trained weights.
+
+### Frame-to-Frame Process:
+- Each frame of the video is processed separately.
+- Input frames are processed via Canny edge detection and then prepared as input for ControlNet.
+- ControlNet is applied to each frame to produce a modified output frame.
+
+### Frame Merging:
+- The changed frames from each iteration are combined into a new video.
+
+### Configuration Explanation:
+- Users can configure the ControlNet model and Stable Diffusion model by setting appropriate parameters and options.
+
+### User Instructions:
+ - A guide to using this project is included in README.md, including steps for installation and execution.
+
+
 ## Contribution
 Please contribute by opening an issue or submitting a pull request. We really appreciate your contribution!
 This project is still under development, so please help.
