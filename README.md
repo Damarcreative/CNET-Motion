@@ -4,9 +4,8 @@ CNET-Motion is a repository for applying ControlNet to video frames, providing m
 ## Overview
 The goal of this project is to demonstrate the application of ControlNet from the diffuser library to video frames. It takes video frames as input, applies ControlNet transformations, and produces motion-based image outputs.
 
-[![Watch the video](https://img.youtube.com/vi/Sp6OAbB5DB8/0.jpg)](https://www.youtube.com/watch?v=Sp6OAbB5DB8)
 [![Watch the video](https://img.youtube.com/vi/Kboe-q3fu2Q/0.jpg)](https://youtube.com/shorts/Kboe-q3fu2Q)
-[![Watch the video](https://img.youtube.com/vi/VRd5VlayZEU/0.jpg)](https://youtube.com/shorts/VRd5VlayZEUQ)
+[![Watch the video](https://img.youtube.com/vi/VRd5VlayZEU/0.jpg)](https://youtube.com/shorts/VRd5VlayZEU)
 
 
 ## Getting Started
