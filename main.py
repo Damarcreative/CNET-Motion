@@ -7,7 +7,7 @@ from diffusers.utils import load_image
 from PIL import Image
 
 ControlNetModeluse = "lllyasviel/sd-controlnet-canny"
-ControlNetimgtoimgModeluse = "/content/model/model.safetensors"
+ControlNetimgtoimgModeluse = "runwayml/stable-diffusion-v1-5"
 
 # Function to process each frame using ControlNet
 def process_frame(input_image_path, output_image_path, controlnet, pipe):
