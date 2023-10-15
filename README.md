@@ -8,6 +8,8 @@ The goal of this project is to demonstrate the application of ControlNet from th
 
 ## Getting Started
 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/15vTIUNMB2ShxN2APsdfcSUwOhtOpDm_j?usp=sharing)
+
 ### Prerequisites
 
 - Python 3.6 or higher
