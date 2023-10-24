@@ -2,6 +2,8 @@
 
 CNET-Motion is a repository for applying ControlNet to video frames, providing motion-based image transformations. This project uses the diffuser library for stable diffusion-based image-to-image transformation.
 
+![Thumbnail](src/CNET-Motion.png)
+
 ## Overview
 The goal of this project is to demonstrate the application of ControlNet from the diffuser library to video frames. It takes video frames as input, applies ControlNet transformations, and produces motion-based image outputs.
 
