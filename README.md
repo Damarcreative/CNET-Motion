@@ -38,7 +38,6 @@ The goal of this project is to demonstrate the application of ControlNet from th
 - Stable Diffusion model: The Stable Diffusion model used is loaded from `runwayml/stable-diffusion-v1-5`. Adjust the model parameters and settings in process_video.py as needed.
 
 ## How does this work?
-![Flow](src/Flow.jpg)
 
 ### Model Initialization:
 - The ControlNet model and Stable Diffusion model are initialized using pre-trained weights.
